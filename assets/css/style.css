@@ -1,4 +1,3 @@
-
 /*
 Theme Name: Landing Page Kenzie Academy
 Theme URI: https://kenzie.com.br/
@@ -30,17 +29,21 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root {
-    --Main-White: #FFFFFF;
-    --Second-white: #F6f6f6;
-    --light-blue: #007AFF;
-    --dark-blue: #00043E;
-    --light-grey: #818181;
-    --dark-grey: #303030;
+
+
+:root{
+    --Main-white: #FFFFFF;
+    --Second-white: #f6f6f6;
+    --light-blue:#007aff;
+    --dark-blue: #00043e;
+    --light-grey:#818181;
+    --dark-grey:#303030;
+
 }
   
+
 /* GERAL */
-html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
+html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -49,8 +52,9 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
 }
 
 img {
-    max-width: 800px;
+    max-width: 249px;
 }
+
 
 figcaption {
 	display: none;
@@ -63,34 +67,43 @@ div.flex {
 div.full-container {
     width: 100%;
     max-width: 1850px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 div.large-container {
     width: 100%;
     max-width: 1170px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 div.container {
     width: 100%;
     max-width: 1140px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 /* GERAL */
-  
-/* HTML */
-html{}
-/* HTML */
-  
-/* BODY */
-body{}
-/* BODY */
-  
-/* HEADER */
-header {
 
+/* HTML */
+html {}
+
+/* HTML */
+
+/* BODY */
+body {
+  background-color: var(--Main-white);
+  width: 498px;
+}
+
+/* BODY */
+h2 {
+    font-family: "Montserrat";
+}
+
+/* HEADER */
+
+header {
+width: 100%;
 }
 
 .topo {
@@ -117,7 +130,7 @@ header {
     background-color: var(--dark-blue);
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
-    color: var(--Main-White);
+    color: var(--Main-white);
 }
 
 .menu ul {
@@ -137,7 +150,12 @@ header {
     text-align: center;
     color: var(--Main-White);
 }
-
+.menu a:hover {
+    color: var(--Main-white);
+}
+#menu_bt {
+    display: none;
+}
 label[for="menu_bt"] {
     float: right;
     padding: 15px 10px;
@@ -165,16 +183,16 @@ label[for="menu_bt"] {
 .secaoDestaque h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 63px;
-    color: var(--Main-White);
+    color: var(--Main-white);
     text-align: center;
 }
 
 .secaoDestaque p {
     font-family: 'Montserrat', sans-serif;
     margin: 40px 0;
-    font-size: 40px;
+    font-size: 21px;
     font-weight: bold;
-    color: var(--Main-White);
+    color: var(--Main-white);
     text-align: center;
 
 }
@@ -190,20 +208,20 @@ div.secaoDestaqueFormulario {
 
 .secaoDestaqueFormulario input {
     font-family: 'Montserrat', sans-serif;
-    font-size: 21px;
+    font-size: 14px;
     font-weight: bold;
     color: var(--light-grey);
     padding-left: 20px;
     border-radius: 7px 0 0 7px;
     border: none;
-    width: 330px;
+    width: 250px;
     height: 50px;
     margin-right: -5px;
 }
 
 .secaoDestaqueFormulario button {
     font-family: 'Montserrat', sans-serif;
-    font-size: 21px;
+    font-size: 14px;
     font-weight: bold;
     background-color: var(--light-blue);
     color: var(--Main-White);
@@ -212,31 +230,286 @@ div.secaoDestaqueFormulario {
     width: 150px;
     height: 50px;
 }
+.secaoDestaqueFormulario button:hover{
+    color: var(--Main-white);
+}
+header {}
+
 /* HEADER */
-  
+
 /* FOOTER */
-footer{}
+footer {
+    display: flex;
+    width:100%;
+    justify-content: center;
+    font-size: 15px;
+    color: var(--dark-grey);
+    align-items: center;
+    margin: 15px 5px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: var(--dark-grey);
+}
+footer a:hover {
+    color: var(--dark-blue)
+}
 /* FOOTER */
 
 /* INICIAL */
-main{}
-/* INICIAL */
+main {}
 
+
+
+main .flex {
+    display: flex;
+    flex-direction: column;
+
+    align-content: space-around;
+    align-items: center;
+}
+
+
+
+/* INICIAL */
+/*SOBRE*/
+.secaoSobre{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-col:nth-child(3){
+    background-color: var(--Second-white);
+    width: 100%;
+}
+.flex-col:nth-child(4){
+    background-color: var(--Second-white);
+    width: 100%;
+}
+
+.flex-col h2{
+    font-size: 24px;
+    margin:50px;
+    color: var(--dark-grey) ;
+}
+#js{
+    text-align: center;
+    margin-top: 0;
+}
+
+
+.flex-col p{
+    font-size: 19px;
+    margin: 50px;
+    color: var(--dark-grey);
+    line-height: 1.5;
+}
+.flex-col span{
+    font-size: 19px;
+    color: var(--light-grey);
+    margin: 50px;
+    line-height: 1.5;
+}
+.flex-col button{
+    font-size: 24px;
+    color:var(--dark-grey);
+    width: 260px ;
+    height: 50px;
+    background-color: var(--Main-white);
+    border: 1px var(--light-grey) solid;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.flex-col button:hover{
+    color: var(--dark-blue);
+}
+.flex-col figure{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-col figure img{
+   width: 50%;
+   margin: 70px
+}
+.flex-col figure img:nth-child(2){
+    width: 50%;
+ }
+
+.flex-col figure figcaption{
+    display: none;
+}
+.flex-col ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 50px;
+    line-height: 1.5;
+}
+.flex-col li{
+    list-style: disc ;
+    color: var(--light-grey);
+    font-size: 19px;
+    text-align: left;
+
+}
+.secaoCursos{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.secaoCursos h2{
+    display:flex;
+    justify-content: center;
+    font-size: 24px;
+    margin:50px ;
+    color: var(--dark-grey) ;
+    font-weight: bold;
+}
+.secaoCursos h3{
+    font-size: 24px;
+    margin:10px;
+    color: var(--dark-grey);
+    line-height: 1.5;
+}
+.secaoCursos p{
+    display:flex;
+    justify-content: center;
+    font-size: 19px;
+    margin:50px;
+    color: var(--dark-grey);
+    line-height: 1.5;
+}
+.secaoCursos li{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+}
+.secaoCursos  img{
+   width: 150px;
+   margin: 10px
+}
+/*SOBRE*/
 /* EXTRAS */
+main .secaoContato {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 5px;
+    align-items: center;
+    align-content: space-between;
+    width: 100%;
+}
 
+.secaoContato-informacoes p {
+    font-size: 15px;
+    width: 250px;
+color: var(--light-grey);
+padding:10px;
+height: 60px;
+}
+.secaoContato-informacoes a {
+    text-decoration: none;
+    color: var(--light-grey);
+   padding:10px;
+   font-size: 15px;
+}
+.secaoContato-informacoes ul{
+    margin: 0 0 0 5px;
+    
+}
+.secaoContato-informacoes li {
+    margin: 10px 0;
+    
+   text-decoration: none;
+   list-style: none;
+}
+
+.secaoContato-informacoes li img {
+    width: 20px;
+  
+}
+main .flex-col{
+   display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    color: var(--light-grey);
+}
+main .flex-col h2{
+    color:var(--dark-grey);
+text-transform: uppercase;
+margin: 60px 0 15px 0;
+
+}
+#nome{
+        width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 15px ;
+    border: 1px solid var(--light-grey);
+    border-radius: 4%;
+}
+#email{
+        width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 15px ;
+    border: 1px solid var(--light-grey);
+    border-radius: 4%;
+}
+#mensagem{
+        width: 200px;
+    height: 100px;
+    padding: 5px;
+    margin-bottom: 15px  0;
+    border: 1px solid var(--light-grey);
+    border-radius: 2%;
+}
+#send{
+ 
+font-size: 19px;
+    color: var(--dark-grey);
+    width: 100px;
+    height: 50px;
+    background-color: var(--Main-white);
+    border: 1px var(--light-grey) solid;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-right: -5px;
+}
 /* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
+::-webkit-scrollbar {}
+
+::-webkit-scrollbar-button {}
+
+::-webkit-scrollbar-track {}
+
+::-webkit-scrollbar-track-piece {}
+
+::-webkit-scrollbar-thumb {}
+
+::-webkit-scrollbar-corner {}
+
+::-webkit-resizer {}
 
 /* EXTRAS */
-  
+
 
 /* MEDIA QUERIES */
+
     @media screen and (min-width: 481px) {
 
     }
@@ -251,3 +524,10 @@ main{}
         }
     }
 /* MEDIA QUERIES */
+
+@media (min-width: 320px) and (max-width: 480px) {}
+
+@media screen and (min-width: 800px) {
+ 
+}
+
