@@ -72,7 +72,7 @@ div.full-container {
 
 div.large-container {
     width: 100%;
-    max-width: 1170px;
+
     margin: 0 auto;
 }
 
@@ -586,6 +586,7 @@ header {
     font-weight: bold;
 }
 
+
 main {
     width: 100%;
 }
@@ -626,6 +627,28 @@ section.secaoSobre {
     width: 100vw;
 
     margin: 0
+
+    section.secaoDestaque {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        background-size: cover;
+        background-image: url(/assets/img/background-destaque.webp);
+    }
+    .secaoDestaque p{
+        margin: 20px;
+    }
+    div.secaoDestaqueFormulario input{
+        width: 500px;
+        height: 40px;
+    }
+    div.secaoDestaqueFormulario button{
+        height: 40px;
+
     }
 
 article.flex {
@@ -719,3 +742,108 @@ div.flex-col.fourth ul {
 }
 
 /* MEDIA QUERIES */
+/*FOOTER DESKTOP*/
+@media (min-width: 767px){
+    footer{}
+    footer p{
+        font-size: 19px;
+        color: var(--light-grey);
+    }
+    footer p a{
+        color: var(--light-blue);
+    }
+}
+/*FOOTER DESKTOP*/
+
+/*BÔNUS DESKTOP*/
+@media (min-width: 767px){
+    .secaoContato{
+        display: flex;
+        flex-direction: row;
+        width: 100vh;
+    }
+     main .flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 70%;
+    }
+    .flex .flex-col{
+       width: 50%;
+    }
+    .secaoContato-informacoes{}
+    .flex-col .secaoContato-informacoes p{
+        margin: 0;
+        margin-top: 50px;
+        margin-left: 0;
+        white-space: nowrap;
+    }
+    .secaoContato-informacoes ul{}
+    .secaoContato-informacoes ul{
+        margin-bottom: 150px;
+    }
+    .secaoContato-informacoes ul li{
+        margin: 0;
+    }
+    .secaoContato-informacoes ul img{}
+    .secaoContato-informacoes ul a {}
+
+    #contatos{
+        width:50%;
+        display:flex;
+    }
+
+    #contatos h2{
+        margin:0;
+        text-align: left;
+        width:100%;
+        margin-bottom: 25px;
+        margin-left: 50px;
+    }
+
+    #contatos form{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding-bottom: 0 ;
+    }
+
+    #nome{
+        width:225px;
+        margin-right: 25px;
+        border-radius: 5px;
+    }
+
+    #email{
+        width:250px;
+        border-radius: 5px;
+    }
+    #mensagem{
+        width:500px;
+        height: 150px;
+        border-radius: 5px;
+    }
+
+    #send{
+        margin-left: 400px ;
+        border-radius: 5px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/*BÔNUS DESKTOP*/
