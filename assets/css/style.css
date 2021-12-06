@@ -288,6 +288,8 @@ main .flex {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    width: 1400px;
+    margin: 40px 100px;
 }
 
 .flex-col {
@@ -547,8 +549,51 @@ main .flex-col h2 {
 
 /* MEDIA QUERIES */
 @media (min-width: 767px) {
-    body {
-        width: 100%;
+
+body {
+    width: 100%;
+}
+
+img {
+    max-width: 600px;
+}
+
+header {
+    width: 100%;
+}
+
+.large-container img {
+    margin-left: 150px;
+    width: 50px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    height: 75px;
+    float: right;
+    margin-right: 40px;
+}
+
+.menu ul:hover {
+    color: var(--light-grey)
+    
+}
+.menu ul li:hover {
+    font-weight: bold;
+}
+
+
+main {
+    width: 100%;
+}
+
+
+    img {
+        max-width: 600px;
     }
 
     header {
@@ -558,7 +603,6 @@ main .flex-col h2 {
     .large-container img {
         margin-left: 150px;
         width: 50px;
-
     }
 
     .menu ul {
@@ -571,17 +615,14 @@ main .flex-col h2 {
         float: right;
         margin-right: 40px;
     }
-.menu ul:hover {
-    color: var(--light-grey)
-    
-}
-.menu ul li:hover {
-    font-weight: bold;
-}
-    main {
-        width: 100%;
+
+    .menu ul:hover {
+        color: var(--light-grey)
     }
 
+    .menu ul li:hover {
+        font-weight: bold;
+    }
     section.secaoDestaque {
         height: 500px;
         display: flex;
@@ -593,130 +634,242 @@ main .flex-col h2 {
         background-size: cover;
         background-image: url(/assets/img/background-destaque.webp);
     }
-    .secaoDestaque p{
+
+    .secaoDestaque p {
         margin: 20px;
     }
-    div.secaoDestaqueFormulario input{
+
+    div.secaoDestaqueFormulario input {
         width: 500px;
         height: 40px;
     }
     div.secaoDestaqueFormulario button{
         height: 40px;
+
     }
+
+article.flex {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 600px 400px;
+    margin-top: 60PX;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-    .menu a {
-        display: none;
-    }
-
-    /* CSS */
-
+div.flex-col.first  {
+    padding: 20px;
+    margin: 0 20%;
 }
 
-/* MEDIA QUERIES */
-/*FOOTER DESKTOP*/
-@media (min-width: 767px){
-    footer{}
-    footer p{
-        font-size: 19px;
-        color: var(--light-grey);
-    }
-    footer p a{
-        color: var(--light-blue);
-    }
+div.flex-col.first span {
+    margin-top: 5px;
 }
-/*FOOTER DESKTOP*/
 
-/*BÔNUS DESKTOP*/
-@media (min-width: 767px){
-    .secaoContato{
-        display: flex;
-        flex-direction: row;
-        width: 100vh;
+div.flex-col button {
+    font-size: 24px;
+    width: 160px;
+    height: 50px;
+    color: black;
+    background-color: var(--Main-white);
+    border: 1px var(--light-grey) solid;
+    border-radius: 6px;
+    margin-bottom: 50px;
+}
+
+div.flex-col.second img {
+  margin: 0;
+  height: 400px;
+  width: 600px;
+}
+
+
+    div.secaoDestaqueFormulario button {
+        height: 40px;
+
     }
-     main .flex{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 70%;
+
+    article.flex {
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-rows: 600px 400px;
+        margin-top: 60PX;
     }
-    .flex .flex-col{
-       width: 50%;
+
+    div.flex-col.first {
+        padding: 20px;
+        margin: 0 20%;
     }
-    .secaoContato-informacoes{}
-    .flex-col .secaoContato-informacoes p{
+
+    div.flex-col.first span {
+        margin-top: 5px;
+    }
+
+    div.flex-col button {
+        font-size: 24px;
+        width: 160px;
+        height: 50px;
+        color: black;
+        background-color: var(--Main-white);
+        border: 1px var(--light-grey) solid;
+        border-radius: 6px;
+        margin-bottom: 50px;
+    }
+
+    div.flex-col.second img {
         margin: 0;
+        height: 400px;
+        width: 600px;
+    }
+
+    div.flex-col.third {
+        height: 400px;
+    }
+
+    div.flex-col.third img {
+        width: 250px;
+    }
+
+    div.flex-col.fourth {
+        height: 400px;
+    }
+
+    div.flex-col.fourth ul {
+        padding: 20px 60px;
+        margin: 0 20%;
+    }
+
+    #js {
         margin-top: 50px;
-        margin-left: 0;
-        white-space: nowrap;
-    }
-    .secaoContato-informacoes ul{}
-    .secaoContato-informacoes ul{
-        margin-bottom: 150px;
-    }
-    .secaoContato-informacoes ul li{
-        margin: 0;
-    }
-    .secaoContato-informacoes ul img{}
-    .secaoContato-informacoes ul a {}
-
-    #contatos{
-        width:50%;
-        display:flex;
     }
 
-    #contatos h2{
-        margin:0;
-        text-align: left;
-        width:100%;
-        margin-bottom: 25px;
-        margin-left: 50px;
-    }
+    /* CURSOS  */
 
-    #contatos form{
-        display: flex;
+    .secaoCursos ul {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: flex-end;
         flex-wrap: wrap;
-        align-items: flex-start;
-        padding-bottom: 0 ;
+        width: 100%;
     }
 
-    #nome{
-        width:225px;
-        margin-right: 25px;
-        border-radius: 5px;
+    .secaoCursos li {
+        padding-left: 100px;
+        padding-right: 100px;
+        display: flex;
+        justify-content: flex-end;
     }
 
-    #email{
-        width:250px;
-        border-radius: 5px;
-    }
-    #mensagem{
-        width:500px;
-        height: 150px;
-        border-radius: 5px;
+    .secaoCursos h2 {
+        font-weight: bolder;
+        margin-top: 30px;
     }
 
-    #send{
-        margin-left: 400px ;
-        border-radius: 5px;
+    .secaoCursos p {
+        color: var(--light-grey);
+        justify-content: center;
     }
 
+    /*FOOTER DESKTOP*/
+    
+        footer {}
 
+        footer p {
+            font-size: 19px;
+            color: var(--light-grey);
+        }
 
+        footer p a {
+            color: var(--light-blue);
+        }
 
+        /*BÔNUS DESKTOP*/
+        .secaoContato {
+            display: flex;
+            flex-direction: row;
+            width: 100vh;
+        }
 
+        main .flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 70%;
+        }
 
+        .flex .flex-col {
+            width: 50%;
+        }
 
+        .secaoContato-informacoes {}
 
+        .flex-col .secaoContato-informacoes p {
+            margin: 0;
+            margin-top: 50px;
+            margin-left: 0;
+            white-space: nowrap;
+        }
 
+        .secaoContato-informacoes ul {}
 
+        .secaoContato-informacoes ul {
+            margin-bottom: 150px;
+        }
 
+        .secaoContato-informacoes ul li {
+            margin: 0;
+        }
 
+        .secaoContato-informacoes ul img {}
 
+        .secaoContato-informacoes ul a {}
 
+        #contatos {
+            width: 50%;
+            display: flex;
+        }
 
+        #contatos h2 {
+            margin: 0;
+            text-align: left;
+            width: 100%;
+            margin-bottom: 25px;
+            margin-left: 50px;
+        }
 
+        #contatos form {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            padding-bottom: 0;
+        }
+
+        #nome {
+            width: 225px;
+            margin-right: 25px;
+            border-radius: 5px;
+        }
+
+        #email {
+            width: 250px;
+            border-radius: 5px;
+        }
+
+        #mensagem {
+            width: 500px;
+            height: 150px;
+            border-radius: 5px;
+        }
+
+        #send {
+            margin-left: 400px;
+            border-radius: 5px;
+        }
 }
 
-/*BÔNUS DESKTOP*/
+    /*FOOTER DESKTOP*/
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        .menu a {
+            display: none;
+        }
+
+    }
