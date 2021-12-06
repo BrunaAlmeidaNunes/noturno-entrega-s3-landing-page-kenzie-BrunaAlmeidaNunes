@@ -550,9 +550,47 @@ main .flex-col h2 {
 /* MEDIA QUERIES */
 @media (min-width: 767px) {
 
-    body {
-        width: 100%;
-    }
+body {
+    width: 100%;
+}
+
+img {
+    max-width: 600px;
+}
+
+header {
+    width: 100%;
+}
+
+.large-container img {
+    margin-left: 150px;
+    width: 50px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    height: 75px;
+    float: right;
+    margin-right: 40px;
+}
+
+.menu ul:hover {
+    color: var(--light-grey)
+    
+}
+.menu ul li:hover {
+    font-weight: bold;
+}
+
+
+main {
+    width: 100%;
+}
+
 
     img {
         max-width: 600px;
@@ -585,8 +623,6 @@ main .flex-col h2 {
     .menu ul li:hover {
         font-weight: bold;
     }
-
-
     section.secaoDestaque {
         height: 500px;
         display: flex;
@@ -607,6 +643,44 @@ main .flex-col h2 {
         width: 500px;
         height: 40px;
     }
+    div.secaoDestaqueFormulario button{
+        height: 40px;
+
+    }
+
+article.flex {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 600px 400px;
+    margin-top: 60PX;
+}
+
+div.flex-col.first  {
+    padding: 20px;
+    margin: 0 20%;
+}
+
+div.flex-col.first span {
+    margin-top: 5px;
+}
+
+div.flex-col button {
+    font-size: 24px;
+    width: 160px;
+    height: 50px;
+    color: black;
+    background-color: var(--Main-white);
+    border: 1px var(--light-grey) solid;
+    border-radius: 6px;
+    margin-bottom: 50px;
+}
+
+div.flex-col.second img {
+  margin: 0;
+  height: 400px;
+  width: 600px;
+}
+
 
     div.secaoDestaqueFormulario button {
         height: 40px;
