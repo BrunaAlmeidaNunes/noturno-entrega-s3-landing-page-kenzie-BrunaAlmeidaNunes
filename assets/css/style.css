@@ -92,7 +92,9 @@ div.container {
 /* BODY */
 body {
     background-color: var(--Main-white);
-    width: 498px;
+    width: 100%;
+    height: 100%;
+    padding: 1px;
 }
 
 /* BODY */
@@ -114,7 +116,7 @@ header {
 .large-container img {
     background-color: var(--dark-blue);
     width: 100px;
-    margin: 20px;
+    margin: 10px;
     float: left;
 
 }
@@ -122,6 +124,7 @@ header {
 .large-container {
     background-color: var(--dark-blue);
     width: 100%;
+
 }
 
 .menu {
@@ -174,20 +177,22 @@ label[for="menu_bt"] {
     display: block;
 }
 
-label[for="menu_bt"] {
-    display: none;
-}
+
 
 .secaoDestaque {
+    display: flex;
     background-color: var(--dark-blue);
     text-align: center;
-    padding-bottom: 30px;
-    padding: 0 30px 30px 30px;
+    padding: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
 }
 
 .secaoDestaque h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 63px;
+    font-size: 33px;
     color: var(--Main-white);
     text-align: center;
 }
@@ -203,7 +208,7 @@ label[for="menu_bt"] {
 }
 
 section.secaoDestaque {
-    height: 500px;
+    height: 400px;
 }
 
 div.secaoDestaqueFormulario {
@@ -219,7 +224,7 @@ div.secaoDestaqueFormulario {
     padding-left: 20px;
     border-radius: 7px 0 0 7px;
     border: none;
-    width: 250px;
+    width: 190px;
     height: 50px;
     margin-right: -5px;
 }
@@ -232,7 +237,7 @@ div.secaoDestaqueFormulario {
     color: var(--Main-White);
     border: none;
     border-radius: 0 7px 7px 0;
-    width: 150px;
+    width: 90px;
     height: 50px;
 }
 
@@ -240,7 +245,7 @@ div.secaoDestaqueFormulario {
     color: var(--Main-white);
 }
 
-header {}
+
 
 /* HEADER */
 
@@ -267,7 +272,9 @@ footer a:hover {
 /* FOOTER */
 
 /* INICIAL */
-main {}
+main {
+    width: 100%;
+}
 
 
 
@@ -288,8 +295,8 @@ main .flex {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    width: 1400px;
-    margin: 40px 100px;
+    width: 100%;
+    margin: 40px 0;
 }
 
 .flex-col {
@@ -475,7 +482,6 @@ main .secaoContato {
 
 main .flex-col {
     display: flex;
-
     flex-direction: column;
     align-items: center;
     color: var(--light-grey);
@@ -484,8 +490,8 @@ main .flex-col {
 main .flex-col h2 {
     color: var(--dark-grey);
     text-transform: uppercase;
-    margin: 60px 0 15px 0;
-
+    margin: 60px 0 15px;
+    padding: 50px;
 }
 
 #nome {
@@ -530,7 +536,10 @@ main .flex-col h2 {
 }
 
 /* para estilizar a scrollbar */
-::-webkit-scrollbar {}
+::-webkit-scrollbar {
+    width: 10px;
+
+}
 
 ::-webkit-scrollbar-button {}
 
@@ -538,7 +547,10 @@ main .flex-col h2 {
 
 ::-webkit-scrollbar-track-piece {}
 
-::-webkit-scrollbar-thumb {}
+::-webkit-scrollbar-thumb {
+    background: var(--dark-blue);
+    border-radius: 50px;
+}
 
 ::-webkit-scrollbar-corner {}
 
@@ -550,271 +562,291 @@ main .flex-col h2 {
 /* MEDIA QUERIES */
 @media (min-width: 767px) {
 
-body {
-    width: 100%;
-}
+    body {
+        width: 100%;
+    }
 
-img {
-    max-width: 600px;
-}
+    img {
+        max-width: 600px;
+    }
 
-header {
-    width: 100%;
-}
+    header {
+        width: 100%;
+    }
 
-.large-container img {
-    margin-left: 150px;
-    width: 50px;
-}
+    .large-container img {
+        margin-left: 150px;
+        width: 50px;
+    }
 
-.menu ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    width: 50%;
-    height: 75px;
-    float: right;
-    margin-right: 40px;
-}
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        width: 50%;
+        height: 75px;
+        float: right;
+        margin-right: 40px;
+    }
 
-.menu ul:hover {
-    color: var(--light-grey)
-    
-}
-.menu ul li:hover {
-    font-weight: bold;
-}
+    .menu ul:hover {
+        color: var(--light-grey)
+    }
 
-
-main {
-    width: 100%;
-}
+    .menu ul li:hover {
+        font-weight: bold;
+    }
 
 
-img {
-    max-width: 600px;
-}
-
-header {
-    width: 100%;
-}
-
-.large-container img {
-    margin-left: 150px;
-    width: 50px;
-}
-
-.menu ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    width: 50%;
-    height: 75px;
-    float: right;
-    margin-right: 40px;
-}
-
-.menu ul:hover {
-    color: var(--light-grey)
-}
-
-.menu ul li:hover {
-    font-weight: bold;
-}
-section.secaoDestaque {
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 0;
-    background-size: cover;
-    background-image: url(/assets/img/background-destaque.webp);
-}
-
-.secaoDestaque p {
-    margin: 20px;
-}
-
-div.secaoDestaqueFormulario input {
-    width: 500px;
-    height: 40px;
-}
-div.secaoDestaqueFormulario button{
-    height: 40px;
-
-}
-
-section.secaoSobre {
-    width: 100%;
-    margin-left: 0;
-}
+    main {
+        width: 100%;
+    }
 
 
-article.flex {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-rows: 600px 400px;
-    margin-top: 60PX;
-}
+    img {
+        max-width: 600px;
+    }
 
-div.flex-col.first  {
-    padding: 20px;
-    margin: 0 20%;
-}
+    header {
+        width: 100%;
+    }
 
-div.flex-col.first span {
-    margin-top: 5px;
-}
+    .large-container img {
+        margin-left: 150px;
+        width: 50px;
+    }
 
-div.flex-col button {
-    font-size: 24px;
-    width: 160px;
-    height: 50px;
-    color: black;
-    background-color: var(--Main-white);
-    border: 1px var(--light-grey) solid;
-    border-radius: 6px;
-    margin-bottom: 50px;
-}
+    label[for="menu_bt"] {
+        display: none;
+    }
 
-div.flex-col.second img {
-  margin: 0;
-  height: 400px;
-  width: 600px;
-}
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        width: 50%;
+        height: 75px;
+        float: right;
+        margin-right: 40px;
+    }
+
+    .menu ul:hover {
+        color: var(--light-grey)
+    }
+
+    .menu ul li:hover {
+        font-weight: bold;
+    }
+
+    section.secaoDestaque {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        background-size: cover;
+        background-image: url(/assets/img/background-destaque.webp);
+    }
+
+    .secaoDestaque h2 {
+        font-size: 63px;
+    }
+
+    .secaoDestaque p {
+        margin: 20px;
+    }
+
+    div.secaoDestaqueFormulario input {
+        width: 500px;
+        height: 40px;
+    }
+
+    div.secaoDestaqueFormulario button {
+        height: 40px;
+
+    }
+
+    section.secaoSobre {
+        width: 100%;
+        margin-left: 0;
+    }
 
 
-div.secaoDestaqueFormulario button {
-    height: 40px;
+    article.flex {
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-rows: 600px 400px;
+        margin-top: 60PX;
+    }
 
-}
+    div.flex-col.first {
+        padding: 20px;
+        margin: 0 20%;
+    }
 
-article.flex {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-rows: 600px 400px;
-    margin-top: 60PX;
-}
+    div.flex-col.first span {
+        margin-top: 5px;
+    }
 
-div.flex-col.first {
-    padding: 20px;
-    margin: 0 20%;
-}
+    div.flex-col button {
+        font-size: 24px;
+        width: 160px;
+        height: 50px;
+        color: black;
+        background-color: var(--Main-white);
+        border: 1px var(--light-grey) solid;
+        border-radius: 6px;
+        margin-bottom: 50px;
+    }
 
-div.flex-col.first span {
-    margin-top: 5px;
-}
+    div.flex-col.second img {
+        margin: 0;
+        height: 400px;
+        width: 600px;
+    }
 
-div.flex-col button {
-    font-size: 24px;
-    width: 160px;
-    height: 50px;
-    color: black;
-    background-color: var(--Main-white);
-    border: 1px var(--light-grey) solid;
-    border-radius: 6px;
-    margin-bottom: 50px;
-    margin-right: 65%;
-}
 
-div.flex-col.second img {
-    margin: 0;
-    height: 400px;
-    width: 600px;
-}
+    div.secaoDestaqueFormulario button {
+        height: 40px;
 
-div.flex-col.third {
-    height: 400px;
-}
+    }
 
-div.flex-col.third img {
-    width: 250px;
-}
+    article.flex {
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-rows: 600px 400px;
+        margin-top: 60PX;
+    }
 
-div.flex-col.fourth {
-    height: 400px;
-}
+    div.flex-col.first {
+        display: flex;
+        padding: 0 0 200px 0;
+        margin: 0;
 
-div.flex-col.fourth ul {
-    padding: 20px 60px;
-    margin: 0 20%;
-}
+    }
 
-#js {
-    margin-top: 50px;
-}
+    div.flex-col.first span {
+        margin-top: 5px;
+    }
 
-/* CURSOS  */
+    div.flex-col button {
+        font-size: 24px;
+        width: 160px;
+        height: 50px;
+        color: black;
+        background-color: var(--Main-white);
+        border: 1px var(--light-grey) solid;
+        border-radius: 6px;
+        margin-bottom: 50px;
+        margin-right: 65%;
+    }
 
-.secaoCursos ul {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    width: 100%;
-}
+    div.flex-col.second img {
+        margin: 0;
+        height: 400px;
+        width: 600px;
+    }
 
-.secaoCursos li {
-    padding-left: 100px;
-    padding-right: 100px;
-    display: flex;
-    justify-content: flex-end;
-}
+    div.flex-col.third {
+        height: 400px;
+    }
 
-.secaoCursos h2 {
-    font-weight: bolder;
-    margin-top: 30px;
-}
+    div.flex-col.third img {
+        width: 250px;
+    }
 
-.secaoCursos p {
-    color: var(--light-grey);
-    justify-content: center;
-}
+    div.flex-col.fourth {
+        height: 400px;
+    }
 
-/*FOOTER DESKTOP*/
+    div.flex-col.fourth ul {
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
 
-footer p {
-    font-size: 19px;
-    color: var(--light-grey);
-}
+    #js h2 {
+        padding: 5px 50px;
+    }
 
-footer p a {
-    color: var(--light-blue);
-}
+    #js {
+        margin-top: 50px;
+    }
 
-/*BÔNUS DESKTOP*/
+    /* CURSOS  */
 
-/* .secaoContato {
+    .secaoCursos ul {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .secaoCursos li {
+        padding-left: 100px;
+        padding-right: 100px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .secaoCursos h2 {
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+
+    .secaoCursos p {
+        color: var(--light-grey);
+        justify-content: center;
+    }
+
+    /*FOOTER DESKTOP*/
+
+    footer p {
+        font-size: 19px;
+        color: var(--light-grey);
+    }
+
+    footer p a {
+        color: var(--light-blue);
+    }
+
+    /*BÔNUS DESKTOP*/
+
+    /* .secaoContato {
     display: flex;
     flex-direction: column;
     width: 100vw;
     align-items: center;
 } */
 
-/* div.flex2 {
-    align-items: center;
-    justify-content: center;
-    margin: 100px;
-} */
+    div.flex2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
 
-/* main.flex-col2 {
+    /* main.flex-col2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--light-grey);
 } */
 
-main.flex-col2 h2 {
-    color: var(--dark-grey);
-    text-transform: uppercase;
-    margin: 60px 0 15px 0;
-}
+    main.flex-col2 h2 {
+        color: var(--dark-grey);
+        text-transform: uppercase;
+        margin: 60px 0 15px 0;
+    }
 
-/* div.secaoContato.flex2 {
+    /* div.secaoContato.flex2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -822,81 +854,76 @@ main.flex-col2 h2 {
     align-items: center;
 } */
 
-.flex2.flex-col2 {
-    width: 50%;
-}
+    .flex2.flex-col2 {
+        width: 50%;
+    }
 
-/* .secaoContato-informacoes {
+    /* .secaoContato-informacoes {
 } */
+    .secaoContato-informacoes {
+        margin: 0 80px 0 0;
+    }
 
-.flex-col2 .secaoContato-informacoes p {
-    margin: 0;
-    margin-top: 50px;
-    margin-left: 0;
-    white-space: nowrap;
-}
+    .flex-col2 .secaoContato-informacoes p {
 
-.secaoContato-informacoes ul {
+        margin: 0;
+        margin-top: 50px;
+        margin-left: 10px;
+        white-space: nowrap;
+        padding: 20px;
+    }
 
-}
+    .secaoContato-informacoes ul {
+        margin-bottom: 150px;
+    }
 
-.secaoContato-informacoes ul {
-    margin-bottom: 150px;
-}
+    .secaoContato-informacoes ul li {
+        margin: 0;
+    }
 
-.secaoContato-informacoes ul li {
-    margin: 0;
-}
+    #contatos {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 
-.secaoContato-informacoes ul img {
+    #contatos h2 {
+        margin: 0;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 25px;
+        margin-left: 50px;
+    }
 
-}
+    #contatos form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding-bottom: 0;
+    }
 
-.secaoContato-informacoes ul a {
-    
-}
+    #nome {
+        width: 225px;
+        margin-right: 25px;
+        border-radius: 5px;
+    }
 
-#contatos {
-    width: 50%;
-    display: flex;
-}
+    #email {
+        width: 250px;
+        border-radius: 5px;
+    }
 
-#contatos h2 {
-    margin: 0;
-    text-align: left;
-    width: 100%;
-    margin-bottom: 25px;
-    margin-left: 50px;
-}
+    #mensagem {
+        width: 500px;
+        height: 150px;
+        border-radius: 5px;
+    }
 
-#contatos form {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding-bottom: 0;
-}
-
-#nome {
-    width: 225px;
-    margin-right: 25px;
-    border-radius: 5px;
-}
-
-#email {
-    width: 250px;
-    border-radius: 5px;
-}
-
-#mensagem {
-    width: 500px;
-    height: 150px;
-    border-radius: 5px;
-}
-
-#send {
-    margin-left: 400px;
-    border-radius: 5px;
-}
+    #send {
+        margin-left: 400px;
+        border-radius: 5px;
+    }
 }
 
 /*FOOTER DESKTOP*/
