@@ -183,7 +183,7 @@ label[for="menu_bt"] {
 
 
 .secaoDestaque {
-    width:100%
+    
     display: flex;
     background-color: var(--dark-blue);
     text-align: center;
